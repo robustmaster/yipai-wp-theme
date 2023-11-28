@@ -59,3 +59,12 @@ function my_theme_setup() {
 }
 
 add_action( 'after_setup_theme', 'my_theme_setup' );
+
+function dmeng_get_https_avatar($avatar) {
+	//~ 替换为 https 的域名
+	$avatar = str_replace(array("www.gravatar.com", "0.gravatar.com", "1.gravatar.com", "2.gravatar.com", "secure.gravatar.com"), "gravatar.yipai.me", $avatar);
+	//~ 替换为 https 协议
+	$avatar = str_replace("http://", "https://", $avatar);
+	return $avatar;
+}
+add_filter('get_avatar', 'dmeng_get_https_avatar');
