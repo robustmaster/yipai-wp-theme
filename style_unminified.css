@@ -1,0 +1,230 @@
+/* Reset some default styles */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+ol, ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;    
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff6600;    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+header {
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-weight: 600;
+}
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.home article {
+    margin-bottom: 0.6rem;
+}
+.home .post-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home .post-title a {
+    font-size: 1.2rem;
+}
+
+.post-title {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+.post-date {
+    font-size: 18px;
+    color: #cfcfcf;
+    margin: 0;
+}
+.post-content {
+    margin-top: 20px;
+    line-height: 2.0rem;
+    font-size: 1.2rem;
+}
+.post-content p {
+    margin-bottom: 15px;
+}
+.post-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.pagination a, .pagination span {
+    display: inline-block;
+    padding: 8px 8px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+}
+.pagination .current {
+    background-color: #ccc;
+    color: #fff;
+    border-color: #ccc;
+}
+
+
+.comments {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+.comment ol.children {
+    list-style: none;
+    margin-left: 3rem;
+    margin-top: 1.2rem;
+}
+
+.comments-title {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+.comment-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li.comment {
+    padding-bottom: 1rem;
+}
+.comment-author {
+    display: flex;
+    align-items: center;
+}
+.comment-author img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.comment-metadata {
+    flex-grow: 1;
+}
+.comment-content {
+    margin: 0.5rem 0;
+}
+.reply {
+    margin: 0.5rem 0;
+}
+.reply a {
+    color: #cfcfcf;
+}
+.reply a:hover {
+    color: #ff6600;
+}
+.comment-date {
+    color: #cfcfcf;
+}
+
+
+/* Style for the comment form */
+.comment-respond {
+    margin-top: 2rem;
+}
+.comment-respond .comment-reply-title {
+    margin: 10px 0;
+}
+.comment-form p{
+    line-height: 1.8;
+}
+.comment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.comment-form input[type="text"], .comment-form input[type="email"], .comment-form input[type="url"], .comment-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.comment-form-cookies-consent label {
+    display: inline;
+    margin-left: 5px;
+}
+.comment-body .reply {
+    margin-top: 0.2rem;
+}
+.comment-author-info b {
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Add Flexbox styles for the footer sections */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 50px auto; 
+    text-align: center;
+    border-top: 1px solid '#efefef';
+    padding-top: 10px;
+}
+
+
+.site-footer .friendship-links {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer .friendship-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.site-footer .friendship-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.site-footer .friendship-links a:hover {
+    color: #ff6600;
+}
+
+.site-footer p {
+    margin: 10px 0;
+    color: #ccc;
+}
